@@ -1,0 +1,14 @@
+authorName: default
+experimentName: tilse
+trialConcurrency: 1
+maxExecDuration: 10h
+maxTrialNum: 10
+trainingServicePlatform: local
+searchSpacePath: search_space.json
+useAnnotation: false
+tuner:
+  builtinTunerName: TPE
+trial:
+  command: sh run.sh
+  codeDir: .
+  gpuNum: 0
